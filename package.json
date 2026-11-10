@@ -1,0 +1,24 @@
+{
+  "name": "smart-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddif-bouchra/Smart-Stream.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/eddif-bouchra/Smart-Stream/issues"
+  },
+  "homepage": "https://github.com/eddif-bouchra/Smart-Stream#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
