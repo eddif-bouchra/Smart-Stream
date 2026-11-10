@@ -196,6 +196,9 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
@@ -205,11 +208,17 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
-  .w-72 {
-    width: calc(var(--spacing) * 72);
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -222,9 +231,6 @@
   }
   .border-collapse {
     border-collapse: collapse;
-  }
-  .cursor-pointer {
-    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -247,6 +253,9 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -258,10 +267,6 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -283,9 +288,6 @@
   .bg-\[\#1E293B\] {
     background-color: #1E293B;
   }
-  .bg-\[\#7E22CE\] {
-    background-color: #7E22CE;
-  }
   .bg-\[\#9333EA\] {
     background-color: #9333EA;
   }
@@ -294,6 +296,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -307,9 +312,6 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-6 {
-    padding-inline: calc(var(--spacing) * 6);
-  }
   .py-1 {
     padding-block: var(--spacing);
   }
@@ -318,6 +320,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -370,6 +375,23 @@
   }
   .focus\:border-\[\#9333EA\]:focus {
     border-color: #9333EA;
+  }
+  @media (width >= 40rem) {
+    .sm\:w-72 {
+      width: calc(var(--spacing) * 72);
+    }
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+    .sm\:items-center {
+      align-items: center;
+    }
+    .sm\:justify-between {
+      justify-content: space-between;
+    }
+    .sm\:px-6 {
+      padding-inline: calc(var(--spacing) * 6);
+    }
   }
   @media (width >= 48rem) {
     .md\:w-64 {
