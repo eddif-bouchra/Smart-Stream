@@ -13,6 +13,7 @@ export async function getChannels() {
     return data[0].channels;
 }
 
+
 async function init() {
     try {
         const chaines = await getChannels();
@@ -27,3 +28,4 @@ async function init() {
 }
 
 init();
+
