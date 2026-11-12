@@ -5,6 +5,7 @@ const previewImage = document.getElementById("previewImage");
 const channelTitle = document.getElementById("channelTitle");
 
 export function afficheChaine(chaines){
+    channelsList.innerHTML = "";
     chaines.forEach((e) => {
         const channelElement = document.createElement("div");
         channelElement.className = "grid grid-cols-[32px_38px_minmax(0,1fr)] items-center gap-2 rounded-lg bg-white p-3 text-slate-900";
