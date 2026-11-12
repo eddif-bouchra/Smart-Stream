@@ -8,14 +8,14 @@
     </head>
     <body>
         <header class="flex flex-col gap-4 w-full bg-[#0F172A] px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-           <div class="flex flex-rows items-center gap-3">
-                <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#9333EA]">
-                    <img src="./img/logo.png"alt="Smart Stream TV"class="w-10 h-10 object-contain">
+           <div class="flex flex-row items-center gap-3">
+                <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-600">
+                    <img src="./img/logo.png" alt="Smart Stream TV" class="w-10 h-10 object-contain">
                 </div>
                     <h1 class="font-bold text-white">Smart Stream TV</h1>
            </div>
                 <div class="w-full sm:w-72 ">
-                    <input type="text" placeholder="Rechercher par nom ou numéro..." class="w-auto min-w-0  rounded-lg border border-[#334155] bg-[#1E293B] px-4 py-2  text-white placeholder-[#94A3B8] outline-none focus:border-[#9333EA] ">
+                    <input  id = "searchInput" type="text" placeholder="Rechercher par nom ou numéro..." class="w-full min-w-0  rounded-lg border border-[#334155] bg-[#1E293B] px-4 py-2  text-white placeholder-[#94A3B8] outline-none focus:border-[#9333EA] ">
                 </div>
             
         </header>
@@ -30,15 +30,15 @@
                 </div>
             </aside>
             <section class="min-w-0 flex-1 p-4 md:p-6">
-                <div class="relative flex aspect-video items-center justify-center overflow-hidden rounded-xl bg-[#1E293B]">
-                    <img id="previewImage" src="" alt="Aperçu de la chaîne" class="hidden h-full w-full object-cover">
-                    <button class="absolute flex h-14 w-14 items-center justify-center rounded-full bg-[#9333EA] text-2xl text-white">▶</button>
+                <div class="relative flex  items-center justify-center overflow-hidden rounded-xl bg-[#1E293B] ">
+                    <img id="previewImage" src="" alt="Aperçu de la chaîne" class="hidden aspect-video w-full object-cover">
+                    
                 </div>
                 <div class="mt-4">
-                    <h2 id="channelTitle" class="font-bold text-white">FR - DISCOVERY ID FHD</h2>
+                    <h2 id="channelTitle" class="font-bold text-white"></h2>
                     <div class="mt-2 flex gap-2">
-                        <span  id ="channelNumber" class="rounded bg-[#1E293B] px-2 py-1 text-xs text-[#94A3B8]">N° 1057</span>
-                        <span id="channelCategory" class="rounded bg-[#1E293B] px-2 py-1 text-xs text-[#94A3B8]">DOCUMENTAIRE</span>
+                        <span  id ="channelNumber" class="rounded bg-[#1E293B] px-2 py-1 text-xs text-[#94A3B8]"></span>
+                        <span id="channelCategory" class="rounded bg-[#1E293B] px-2 py-1 text-xs text-[#94A3B8]"></span>
                     </div>
                 </div>
             </section>
