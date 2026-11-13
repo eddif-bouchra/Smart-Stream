@@ -3,6 +3,7 @@ const channelNumber = document.getElementById("channelNumber");
 const channelCategory = document.getElementById("channelCategory");
 const previewImage = document.getElementById("previewImage");
 const channelTitle = document.getElementById("channelTitle");
+const countrySelect = document.getElementById("countrySelect");
 
 export function afficheChaine(chaines){
     channelsList.innerHTML = "";
@@ -30,4 +31,29 @@ export function afficheChaine(chaines){
         })
         channelsList.appendChild(channelElement);
     });
+};
+const names = {
+    FR: "France",
+    MA: "Maroc",
+    ES: "Espagne",
+    GB: "Royaume-Uni"
+};
+console.log("Fonction afficheCountrys appelée");
+export function afficheCountrys(country){
+    countrySelect.innerHTML ="";
+    const alloption =document.createElement("option");
+    alloption.value = "All";
+    alloption.textContent = "Tous les pays";
+    countrySelect.appendChild(alloption);
+    country.forEach((rajae) => {
+        const optionElement = document.createElement("option");
+        optionElement.value = rajae;
+        optionElement.textContent=names[rajae] || rajae;
+        countrySelect.appendChild(optionElement);
+    });
+     countrySelect.addEventListener("change",function() {
+        countrySelect.value
+         console.log(countrySelect.value)
+        })
+   
 }
