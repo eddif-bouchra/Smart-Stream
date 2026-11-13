@@ -12,7 +12,7 @@ export async function getChannels() {
 
     const data = await response.json();
     console.log(data);
-    return data[0].channels;
+    return data;
 }
 
 
